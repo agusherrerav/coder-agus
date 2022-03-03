@@ -1,0 +1,57 @@
+@import "__variables";
+
+nav{
+    div{
+        div{
+            div{
+               background-color: rgb(255, 255, 255);
+               a{ 
+                   border: 0.5px solid rgb(235, 235, 235);
+                   margin-left: auto;
+                   text-decoration: none;
+                   text-transform:uppercase;
+                   color: rgb(0, 0, 0);
+
+                   &:hover{
+                       background-color: $color-rosa;
+                   }
+               }
+            }
+        }
+    }
+}
+
+/* Estilos generales */
+.btn {
+    border-radius: 100%;
+    width: $tamanoBoton;
+    height: $tamanoBoton;
+    font-size: $tamanoTipo;
+}
+
+/* Bucle Each */
+
+@each $rosa,
+$color in $redes {
+    .#{$rosa} {
+        background-color: $color;
+    }
+}
+.newButton {
+    /* Extend */
+    @extend .btn;
+    /* map-get() */
+    background-color: map-get($redes, whatsapp);
+}
+
+
+/* Mixin */
+
+@mixin sizes($width, $height) {
+    height: $height;
+    width: $width;
+ }
+ .btn {
+    @include sizes(100px, 100px);
+ }
+ 

@@ -1,0 +1,50 @@
+/* Vars */
+/* Maps */
+nav div div div {
+  background-color: white;
+}
+
+nav div div div a {
+  border: 0.5px solid #ebebeb;
+  margin-left: auto;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+}
+
+nav div div div a:hover {
+  background-color: #ff4180;
+}
+
+/* Estilos generales */
+.btn, .newButton {
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+  font-size: 14px;
+}
+
+/* Bucle Each */
+.facebook {
+  background-color: #ffd904;
+}
+
+.whatsapp {
+  background-color: #ff9823;
+}
+
+.instagram {
+  background-color: #ff316f;
+}
+
+.newButton {
+  /* Extend */
+  /* map-get() */
+  background-color: #ff9823;
+}
+
+/* Mixin */
+.btn, .newButton {
+  height: 100px;
+  width: 100px;
+}
